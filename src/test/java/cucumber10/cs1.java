@@ -76,9 +76,9 @@ public class cs1 {
 
 	@Then("^successfully register$")
 	public void successfully_register() throws Throwable {
-	  // String actual=driver.findElement(By.xpath("//*[@id=\"errormsg\"]")).getText();
-	  // String expected="User Registered Succesfully!!! Please login";
-	   //Assert.assertEquals(expected, actual);
+	String expected=driver.findElement(By.xpath("//*[@id=\"errormsg\"]")).getText();
+	String actual="User Registered Succesfully!!! Please login";
+	Assert.assertEquals(expected, actual);
 	}
 
 
